@@ -7,6 +7,6 @@ function onBtnClick(e) {
   e.preventDefault();
   console.log(e);
   if (e.target.className === "wbsRecipe-button") {
-    window.location.href = `./recipe.html?recipe=${e.target.dataset.id}`;
+    window.location.href = `./gannaRecipe.html?recipe=${e.target.dataset.id}`;
   }
 }

@@ -1,0 +1,57 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wbsRecipes-section {
+  padding: 3rem;
+}
+.wbsRecipes-wrp {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center; */
+}
+.wbsRecipes-list {
+  display: flex;
+  gap: 2rem;
+}
+.wbsRecipes-item {
+  padding: 1rem;
+  /* width: 400px; */
+  display: flex;
+  flex-basis: calc((100% - 2 * 2rem) / 3);
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.wbsRecipe-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wbsRecipe-img {
+  margin-bottom: 1rem;
+  width: 400px;
+}
+.wbsRecipe-description {
+  margin-bottom: 2rem;
+}
+.wbsRecipe-button {
+  border: 2px solid green;
+  border-radius: 3px;
+  color: green;
+  background-color: white;
+  outline: transparent;
+  width: 120px;
+  height: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.wbsRecipe-button:hover,
+.wbsRecipe-button:focus {
+  background-color: green;
+  color: white;
+}

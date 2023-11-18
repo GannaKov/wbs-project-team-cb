@@ -1,6 +1,20 @@
+.wbsNav {
+  padding: 2rem;
+  outline: 1px solid red;
+}
 .wbsNav__list {
   display: flex;
   justify-content: space-between;
 }
 .wbsNav-item {
+}
+.wbsNav__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wbsNav__link:hover,
+.wbsNav__link:focus {
+  color: green;
+}
+.wbs--current-link {
+  color: green;
 }

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganna's Cook Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700&family=Source+Sans+3:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,7 +24,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./ganna.js"></script>
   </head>
   <body>
     <nav class="wbsNav">
@@ -54,13 +59,15 @@
                 src="./Images/ganna/Av-chicken-Salad.jpg"
                 alt="Low-Carb Avocado Chicken Salad"
               />
-              <p class="wbsRecipe-description">
-                This chicken salad is a lunchtime delight! Packed with creamy
-                avocado, tender chicken, and crunchy veggies, it's a healthy and
-                satisfying meal that won't weigh you down. Tossed in a tangy
-                yogurt dressing with a hint of spice, it's a flavor explosion
-                that's perfect for a light meal.
-              </p>
+              <div class="wbsRecipe-description">
+                <p class="wbsRecipe-text">
+                  This chicken salad is a lunchtime delight! Packed with creamy
+                  avocado, tender chicken, and crunchy veggies, it's a healthy
+                  and satisfying meal that won't weigh you down. Tossed in a
+                  tangy yogurt dressing with a hint of spice, it's a flavor
+                  explosion that's perfect for a light meal.
+                </p>
+              </div>
               <button
                 class="wbsRecipe-button"
                 data-id="1"
@@ -72,19 +79,20 @@
             </li>
 
             <li class="wbsRecipes-item">
-              <h2 class="wbsRecipe-title">Low-Carb Avocado Chicken Salad</h2>
+              <h2 class="wbsRecipe-title">Tangy & Saucy Spaghetti Recipes</h2>
               <img
                 class="wbsRecipe-img"
-                src="./Images/ganna/Av-chicken-Salad.jpg"
-                alt="Low-Carb Avocado Chicken Salad"
+                src="./Images/ganna/Tangy-spaghetti.jpg"
+                alt="Tangy & Saucy Spaghetti Recipes"
               />
-              <p class="wbsRecipe-description">
-                This chicken salad is a lunchtime delight! Packed with creamy
-                avocado, tender chicken, and crunchy veggies, it's a healthy and
-                satisfying meal that won't weigh you down. Tossed in a tangy
-                yogurt dressing with a hint of spice, it's a flavor explosion
-                that's perfect for a light meal.
-              </p>
+              <div class="wbsRecipe-description">
+                <p class="wbsRecipe-text">
+                  Savor the bold flavors of this Tomato and Anchovy Pasta, a
+                  perfect weeknight meal that's both simple and satisfying. With
+                  a zesty tomato sauce and umami-packed anchovies, this dish
+                  will have your taste buds dancing in no time!
+                </p>
+              </div>
               <button
                 class="wbsRecipe-button"
                 data-id="2"
@@ -95,19 +103,22 @@
               </button>
             </li>
             <li class="wbsRecipes-item">
-              <h2 class="wbsRecipe-title">Low-Carb Avocado Chicken Salad</h2>
+              <h2 class="wbsRecipe-title">One-Pot Lemon Garlic Shrimp Pasta</h2>
               <img
                 class="wbsRecipe-img"
-                src="./Images/ganna/Av-chicken-Salad.jpg"
-                alt="Low-Carb Avocado Chicken Salad"
+                src="./Images/ganna/garlic-shrimp-pasta.jpg"
+                alt="One-Pot Lemon Garlic Shrimp Pasta"
               />
-              <p class="wbsRecipe-description">
-                This chicken salad is a lunchtime delight! Packed with creamy
-                avocado, tender chicken, and crunchy veggies, it's a healthy and
-                satisfying meal that won't weigh you down. Tossed in a tangy
-                yogurt dressing with a hint of spice, it's a flavor explosion
-                that's perfect for a light meal.
-              </p>
+              <div class="wbsRecipe-description">
+                <p class="wbsRecipe-text">
+                  This easy 30-minute pasta recipe transforms ingredients that
+                  you already have in your kitchen into a posh, seafood dish
+                  you’ll want to serve at your next dinner party. And since the
+                  whole dish is made in a single pot, clean-up is easy. Don’t be
+                  surprised if this becomes your favorite quick go-to.
+                </p>
+              </div>
+
               <button
                 class="wbsRecipe-button"
                 data-id="3"
@@ -121,5 +132,6 @@
         </div>
       </section>
     </main>
+    <script type="module" src="./ganna.js"></script>
   </body>
 </html>

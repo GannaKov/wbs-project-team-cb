@@ -1,4 +1,4 @@
-import { ref } from "./js/ref.js";
+"use strict";
 import { seeMoreControl } from "./js/seeMoreBtn.js";
 
 seeMoreControl();

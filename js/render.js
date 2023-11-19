@@ -1,6 +1,29 @@
 import { ref } from "./ref.js";
 //import { recipesData } from "./gannaData";
 
+export function renderRecipe(arr) {
+  const recipeId = getParameterByName("recipe");
+
+  let recipeMarkup;
+  if (arr.length > 0) {
+    recipeMarkup = `<h1 class="wbsOneRecipe-title">${
+      arr[recipeId - 1].title
+    }</h1>
+        <img
+            class="wbsOneRecipe-img"
+            src=${arr[recipeId - 1].img}
+            alt="Low-Carb Avocado Chicken Salad"
+          />
+          <p class="wbsOneRecipe-text">
+            ${arr[recipeId - 1].description}
+          </p> 
+       `;
+  } else {
+    recipeMarkup = `<li class="wbsOneRecipe__dir-item"><p style="text-align:center">UPS... Nothing found!</p></li>`;
+  }
+  ref.oneRecipe.insertAdjacentHTML("afterbegin", recipeMarkup);
+}
+
 export function renderDirection(arr) {
   const recipeId = getParameterByName("recipe");
   //console.log("url", arr[recipeId - 1].process);

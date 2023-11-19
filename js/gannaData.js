@@ -2,7 +2,8 @@ export const recipesData = [
   {
     id: "1",
     title: "Low-Carb Avocado Chicken Salad ",
-    img: "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/45b4efeb5d2c4d29970344ae165615ab/FixedFBFinal.jpg ",
+    // img: "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/45b4efeb5d2c4d29970344ae165615ab/FixedFBFinal.jpg ",
+    img: "./Images/ganna/Av-chicken-Salad.jpg",
     description:
       "This chicken salad is a lunchtime delight! Packed with creamy avocado, tender chicken, and crunchy veggies, it's a healthy and satisfying meal that won't weigh you down. Tossed in a tangy yogurt dressing with a hint of spice, it's a flavor explosion that's perfect for a light meal.",
     ingredients: [
@@ -27,7 +28,8 @@ export const recipesData = [
   {
     id: "2",
     title: "Tangy & Saucy Spaghetti Recipes",
-    img: "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/252931.jpg ",
+    // img: "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/252931.jpg ",
+    img: "./Images/ganna/Tangy-spaghetti.jpg",
     description:
       "Savor the bold flavors of this Tomato and Anchovy Pasta, a perfect weeknight meal that's both simple and satisfying. With a zesty tomato sauce and umami-packed anchovies, this dish will have your taste buds dancing in no time!",
     ingredients: [
@@ -61,7 +63,8 @@ export const recipesData = [
   {
     id: "3",
     title: "One-Pot Lemon Garlic Shrimp Pasta",
-    img: "https://img.buzzfeed.com/video-api-prod/assets/9ee2dadcbfcb4095872e6cdbaa24ff14/Thumb_A_FB.jpg ",
+    // img: "https://img.buzzfeed.com/video-api-prod/assets/9ee2dadcbfcb4095872e6cdbaa24ff14/Thumb_A_FB.jpg ",
+    img: "./Images/ganna/garlic-shrimp-pasta.jpg",
     description:
       "This easy 30-minute pasta recipe transforms ingredients that you already have in your kitchen into a posh, seafood dish you’ll want to serve at your next dinner party. And since the whole dish is made in a single pot, clean-up is easy. Don’t be surprised if this becomes your favorite quick go-to. ",
     ingredients: [

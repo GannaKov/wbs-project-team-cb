@@ -3,4 +3,5 @@ export const ref = {
   btnSeeMore: document.querySelector(".wbsRecipe-button"),
   directionList: document.querySelector(".wbsOneRecipe__dir-list"),
   tableIngrBody: document.querySelector(".wbsTableBody"),
+  oneRecipe: document.querySelector(".wbsOneRecipe-wrp"),
 };

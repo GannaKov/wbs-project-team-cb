@@ -1,4 +1,5 @@
 import { ref } from "./ref.js";
+// import { fetchDir } from "./render.js";
 
 export function seeMoreControl() {
   ref.recipesList.addEventListener("click", onBtnClick);
@@ -9,4 +10,5 @@ function onBtnClick(e) {
   if (e.target.className === "wbsRecipe-button") {
     window.location.href = `./gannaRecipe.html?recipe=${e.target.dataset.id}`;
   }
+  // fetchDir();
 }

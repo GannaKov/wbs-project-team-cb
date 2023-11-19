@@ -50,5 +50,27 @@
     max-width: 800px;
   } */
 }
+
 .wbsOneRecipe-text {
+  margin-bottom: 3rem;
+}
+.wbsOneRecipe__ingr-title {
+  margin-bottom: 2rem;
+}
+.wbsTable {
+  margin-bottom: 3rem;
+}
+.wbsOneRecipe__dir-title {
+  margin-bottom: 2rem;
+}
+.wbsOneRecipe__dir-list {
+}
+.wbsOneRecipe__dir-item {
+  display: flex;
+}
+.wbsOneRecipe__dir-num {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+.wbsOneRecipe__dir-text {
 }

@@ -89,3 +89,25 @@
 .title--sec {
   margin-left: 150px;
 }
+.wbsSectionMain {
+  /* border-top: 1px solid #ffd977; */
+  padding: 6rem 3rem;
+}
+.wbsLine {
+  border-bottom: 1px solid #ffd977;
+  margin-bottom: 4rem;
+}
+.wbsCarousel-wrp {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wbsSectionMain-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 50px;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.carousel {
+  margin: 0 auto;
+  width: 800px;
+}

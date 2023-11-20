@@ -47,6 +47,8 @@
 .wbsOneRecipe-img {
   width: 100%;
   margin-bottom: 2rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   /* @media screen and (min-width: 768px) {
     max-width: 750px;
   }
@@ -58,10 +60,11 @@
 .wbsOneRecipe-text {
   margin-bottom: 3rem;
   font-family: "Source Sans 3", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .wbsOneRecipe__ingr-title {
   margin-bottom: 2rem;
+  font-size: 2rem;
   font-family: "Frank Ruhl Libre", serif;
 }
 .wbsTable {
@@ -73,11 +76,12 @@
 .wbsOneRecipe__dir-title {
   margin-bottom: 2rem;
   font-family: "Frank Ruhl Libre", serif;
+  font-size: 2rem;
 }
 .wbsOneRecipe__dir-list {
   font-family: "Source Sans 3", sans-serif;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .wbsOneRecipe__dir-item {
   display: flex;

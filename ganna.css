@@ -4,7 +4,10 @@ img {
   height: auto;
 }
 .wbsRecipes-section {
-  padding: 3rem;
+  padding: 1rem;
+  @media screen and (min-width: 1200px) {
+    padding: 3rem;
+  }
 }
 .wbsRecipes-wrp {
   max-width: 1200px;

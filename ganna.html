@@ -36,9 +36,7 @@
             <a class="wbsNav__link" href="./index.html">HOME</a>
           </li>
           <li class="wbsNav__item">
-            <a class="wbsNav__link wbs--current-link" href="./ganna.html"
-              >GANNA</a
-            >
+            <a class="wbsNav__link wbs--current-link" href="#">GANNA</a>
           </li>
 
           <li class="wbsNav__item">
@@ -52,6 +50,8 @@
           type="button"
           class="log_open_btn"
           aria-label="open registration"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
         >
           log in
         </button>
@@ -61,84 +61,7 @@
     <main>
       <section class="wbsRecipes-section">
         <div class="wbsRecipes-wrp">
-          <ul class="wbsRecipes-list">
-            <li class="wbsRecipes-item">
-              <h2 class="wbsRecipe-title">Low-Carb Avocado Chicken Salad</h2>
-              <img
-                class="wbsRecipe-img"
-                src="./Images/ganna/Av-chicken-Salad.jpg"
-                alt="Low-Carb Avocado Chicken Salad"
-              />
-              <div class="wbsRecipe-description">
-                <p class="wbsRecipe-text">
-                  This chicken salad is a lunchtime delight! Packed with creamy
-                  avocado, tender chicken, and crunchy veggies, it's a healthy
-                  and satisfying meal that won't weigh you down. Tossed in a
-                  tangy yogurt dressing with a hint of spice, it's a flavor
-                  explosion that's perfect for a light meal.
-                </p>
-              </div>
-              <button
-                class="wbsRecipe-button"
-                data-id="1"
-                role="See more"
-                type="button"
-              >
-                SEE MORE
-              </button>
-            </li>
-
-            <li class="wbsRecipes-item">
-              <h2 class="wbsRecipe-title">Tangy & Saucy Spaghetti Recipes</h2>
-              <img
-                class="wbsRecipe-img"
-                src="./Images/ganna/Tangy-spaghetti.jpg"
-                alt="Tangy & Saucy Spaghetti Recipes"
-              />
-              <div class="wbsRecipe-description">
-                <p class="wbsRecipe-text">
-                  Savor the bold flavors of this Tomato and Anchovy Pasta, a
-                  perfect weeknight meal that's both simple and satisfying. With
-                  a zesty tomato sauce and umami-packed anchovies, this dish
-                  will have your taste buds dancing in no time!
-                </p>
-              </div>
-              <button
-                class="wbsRecipe-button"
-                data-id="2"
-                role="See more"
-                type="button"
-              >
-                SEE MORE
-              </button>
-            </li>
-            <li class="wbsRecipes-item">
-              <h2 class="wbsRecipe-title">One-Pot Lemon Garlic Shrimp Pasta</h2>
-              <img
-                class="wbsRecipe-img"
-                src="./Images/ganna/garlic-shrimp-pasta.jpg"
-                alt="One-Pot Lemon Garlic Shrimp Pasta"
-              />
-              <div class="wbsRecipe-description">
-                <p class="wbsRecipe-text">
-                  This easy 30-minute pasta recipe transforms ingredients that
-                  you already have in your kitchen into a posh, seafood dish
-                  you’ll want to serve at your next dinner party. And since the
-                  whole dish is made in a single pot, clean-up is easy. Don’t be
-                  surprised if this becomes your favorite quick go-to.
-                </p>
-              </div>
-
-              <button
-                class="wbsRecipe-button"
-                data-id="3"
-                role="See more"
-                type="button"
-              >
-                SEE MORE
-              </button>
-            </li>
-          </ul>
+          <ul class="wbsRecipes-list"></ul>
         </div>
       </section>
     </main>
@@ -185,6 +108,62 @@
       </div>
       <p class="wbsCopyright">Copyright © 2023 · Jummy Jummy Site</p>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <div class="modal-body">
+            <form class="form-auth" autocomplete="on">
+              <div class="form-auth__box">
+                <lable class="form-auth__lable">Email&nbsp;&nbsp;&#8432;</lable>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-auth__input"
+                  required
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="form-auth__box">
+                <lable class="form-auth__lable"
+                  >Password&nbsp;&nbsp;&#8432;</lable
+                >
+                <input
+                  type="password"
+                  autocomplete="current-password"
+                  name="pass"
+                  class="form-auth__input"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="form-auth__btn-submit">Log in</button>
+            <div class="form-auth__registrate">
+              <p class="title-question-user">Don't have an Account?</p>
+              <button class="form-auth__button-reg">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./ganna.js"></script>
   </body>
 </html>

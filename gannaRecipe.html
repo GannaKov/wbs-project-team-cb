@@ -50,30 +50,24 @@
           type="button"
           class="log_open_btn"
           aria-label="open registration"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
         >
           log in
         </button>
       </nav>
     </header>
     <button role="go back button" type="button" class="wbsGoBack-btn">
-      <a href="./ganna.html" class="wbsGoBack-link">Go back to Recipes</a>
+      <a href="./ganna.html" class="wbsGoBack-link"
+        ><svg class="wbsGoBack-icon" width="20" height="20">
+          <use href="./Images/ganna/icons.svg#icon-arrow-left"></use>
+        </svg>
+        Go back
+      </a>
     </button>
     <main>
       <section class="wbsOneRecipe-section">
         <div class="wbsOneRecipe-wrp">
-          <!-- <h1 class="wbsOneRecipe-title">Low-Carb Avocado Chicken Salad</h1>
-          <img
-            class="wbsOneRecipe-img"
-            src="./Images/ganna/Av-chicken-Salad.jpg"
-            alt="Low-Carb Avocado Chicken Salad"
-          />
-          <p class="wbsOneRecipe-text">
-            This chicken salad is a lunchtime delight! Packed with creamy
-            avocado, tender chicken, and crunchy veggies, it's a healthy and
-            satisfying meal that won't weigh you down. Tossed in a tangy yogurt
-            dressing with a hint of spice, it's a flavor explosion that's
-            perfect for a light meal.
-          </p> -->
           <h2 class="wbsOneRecipe__ingr-title">Ingredients</h2>
           <table class="table table-striped wbsTable">
             <thead class="table-dark">
@@ -82,26 +76,112 @@
                 <th scope="col">Ingredient</th>
               </tr>
             </thead>
-            <tbody class="wbsTableBody">
-              <!-- <tr>
-                <th scope="row">1</th>
-                <td>⅔ cup plain Greek yogurt"</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>1 tablespoon lime juice</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Pepper, to taste</td>
-              </tr> -->
-            </tbody>
+            <tbody class="wbsTableBody"></tbody>
           </table>
           <h2 class="wbsOneRecipe__dir-title">Directions</h2>
           <ul class="wbsOneRecipe__dir-list"></ul>
         </div>
       </section>
     </main>
+    <footer class="wbsFooter">
+      <div class="wbsFooter__wrapper">
+        <div class="wbsFooter__soc-list">
+          <p class="wbsFooter__soc-list-text">LET'S BE FRIENDS!</p>
+          <ul class="wbsSoc-list">
+            <li class="wbsSoc-list__item">
+              <a class="wbsSoc-list__link" href="#"
+                ><svg class="wbsSoc-list__icon" width="20" height="20">
+                  <use href="./Images/ganna/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="wbsSoc-list__item">
+              <a class="wbsSoc-list__link" href="#"
+                ><svg class="wbsSoc-list__icon" width="20" height="20">
+                  <use href="./Images/ganna/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="wbsSoc-list__item">
+              <a class="wbsSoc-list__link" href="#"
+                ><svg class="wbsSoc-list__icon" width="20" height="20">
+                  <use href="./Images/ganna/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="wbsFooter__mail">
+          <p class="wbsFooter__text-first">Ready to cook?</p>
+          <p class="wbsFooter__text-sec">Sign up for our weekly newsletters!</p>
+          <form class="wbsFooter-form">
+            <input
+              class="wbsFooter-form__imput"
+              placeholder="Enter your email"
+              type="email"
+            />
+            <button class="wbsFooter-form__btn">Sign up</button>
+          </form>
+        </div>
+      </div>
+      <p class="wbsCopyright">Copyright © 2023 · Jummy Jummy Site</p>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <div class="modal-body">
+            <form class="form-auth" autocomplete="on">
+              <div class="form-auth__box">
+                <lable class="form-auth__lable">Email&nbsp;&nbsp;&#8432;</lable>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-auth__input"
+                  required
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="form-auth__box">
+                <lable class="form-auth__lable"
+                  >Password&nbsp;&nbsp;&#8432;</lable
+                >
+                <input
+                  type="password"
+                  autocomplete="current-password"
+                  name="pass"
+                  class="form-auth__input"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="form-auth__btn-submit">Log in</button>
+            <div class="form-auth__registrate">
+              <p class="title-question-user">Don't have an Account?</p>
+              <button class="form-auth__button-reg">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./gannaRecipe.js"></script>
   </body>
 </html>

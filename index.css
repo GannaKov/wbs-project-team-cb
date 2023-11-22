@@ -11,6 +11,8 @@
     grid-template-columns: 1fr 3fr 1fr;
 
     padding: 0 4rem;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 .header__logo {
@@ -76,11 +78,12 @@
     border-color: green;
   }
 }
+/* --- Hero --- */
 .hero {
   max-width: 1600px;
   /* height: 600px; */
   margin: 3rem auto 0;
-  padding: 160px 180px 190px;
+  padding: 110px 0px 200px 80px;
   background-size: cover;
   background-color: rgba(196, 196, 196, 1);
   background-image: linear-gradient(
@@ -90,26 +93,43 @@
     url(./Images/ganna/food.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (min-width: 768px) {
+    padding: 160px 0px 180px 190px;
+  }
 }
 
 .hero-title {
   color: white;
   font-family: "Pacifico";
-  font-size: 80px;
+  font-size: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 80px;
+  }
 }
 .title--first {
 }
 .title--sec {
-  margin-left: 150px;
+  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 150px;
+  }
 }
+/*---- Section -----*/
+/* border-top: 1px solid #ffd977; */
 .wbsSectionMain {
-  /* border-top: 1px solid #ffd977; */
-  padding: 6rem 3rem;
+  padding: 6rem 1rem;
+  @media screen and (min-width: 1200px) {
+    padding: 6rem 0;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 .wbsLine {
   border-bottom: 1px solid #ffd977;
   margin-bottom: 4rem;
+  /* max-width: 1600px; */
 }
+/* ----- Carousel ------  */
 .wbsCarousel-wrp {
   max-width: 1200px;
   margin: 0 auto;
@@ -122,12 +142,18 @@
 }
 .carousel {
   margin: 0 auto;
-  width: 800px;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+  }
 }
 /* ---- footer ----  */
 .wbsFooter {
   padding: 3rem 0px;
-  max-width: 1600px;
+
   display: flex;
   flex-direction: column;
   border-top: 1px solid #ffd977;
@@ -137,12 +163,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   @media screen and (min-width: 1200px) {
     margin-bottom: 3rem;
     flex-direction: row;
     align-items: start;
     width: 100%;
     justify-content: space-around;
+    max-width: 1600px;
   }
 }
 .wbsFooter__soc-list-text {
@@ -211,7 +239,7 @@
 }
 .wbsFooter-form__imput {
   width: 300px;
-  margin-right: 1rem;
+
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.5rem;
   padding-left: 0.875rem;
@@ -222,9 +250,9 @@
   border: solid 1px #cce3e3;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  /* @media screen and (min-width: 768px) {
-    width: 300px;
-  } */
+  @media screen and (min-width: 768px) {
+    margin-right: 1rem;
+  }
 
   /* @include desktop {
     width: 292px;

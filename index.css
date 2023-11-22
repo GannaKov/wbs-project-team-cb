@@ -133,6 +133,8 @@
 .wbsCarousel-wrp {
   max-width: 1200px;
   margin: 0 auto;
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 .wbsSectionMain-title {
   text-align: center;
@@ -149,6 +151,10 @@
   @media screen and (min-width: 1200px) {
     width: 800px;
   }
+}
+.carousel-inner {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ---- footer ----  */
 .wbsFooter {
@@ -286,4 +292,120 @@
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.2rem;
   text-align: center;
+}
+/* --- Modal --- */
+.modal-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.5rem;
+}
+.form-auth__box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.form-auth__lable {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+.form-auth__input {
+  padding-left: 1rem;
+  width: 100%;
+  height: 40px;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.5);
+  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    height: 40px;
+  }
+
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-auth__input:focus,
+.form-auth__input:hover {
+  border-color: rgba(0, 128, 0, 0.687);
+}
+.form-auth__box-button-form {
+  margin-bottom: 3rem;
+  width: 80px;
+  height: 60px;
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  outline: transparent;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.15);
+}
+.form-auth__box-button-form:hover,
+.form-auth__box-button-form:focus {
+  background-color: green;
+  border-color: green;
+}
+.form-auth__btn-submit {
+  margin-bottom: 3rem;
+  width: 80px;
+  height: 60px;
+  background-color: rgba(0, 128, 0, 0.8);
+  border: 1px solid rgba(0, 128, 0, 0.8);
+  color: white;
+  outline: transparent;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    height: 40px;
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-auth__btn-submit:hover,
+.form-auth__btn-submit:focus {
+  background-color: green;
+  border-color: green;
+}
+.form-auth__registrate {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.title-question-user {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.2rem;
+}
+.form-auth__button-reg {
+  color: green;
+  width: 180px;
+  height: 30px;
+  background-color: white;
+  outline: transparent;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.form-auth__button-reg:hover,
+.form-auth__button-reg:focus {
+  box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green, 0 0 100px green;
+}
+.modal-header {
+  border-bottom: 1px solid transparent;
+}
+.modal-body {
+  padding: 1rem 2rem;
+}
+.modal-footer {
+  flex-direction: column;
+  border-top: 1px solid transparent;
 }

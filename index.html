@@ -51,6 +51,8 @@
           type="button"
           class="log_open_btn"
           aria-label="open registration"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
         >
           log in
         </button>
@@ -167,5 +169,63 @@
       </div>
       <p class="wbsCopyright">Copyright © 2023 · Jummy Jummy Site</p>
     </footer>
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-auth" autocomplete="on">
+              <div class="form-auth__box">
+                <lable class="form-auth__lable">Email</lable>
+                <input type="email" name="email" class="form-auth__input" />
+              </div>
+
+              <div class="form-auth__box">
+                <lable class="form-auth__lable">Password</lable>
+                <input
+                  type="password"
+                  autocomplete="current-password"
+                  name="pass"
+                  class="form-auth__input"
+                />
+              </div>
+
+              <!-- <div class="form-auth__box-button-form">
+                <button type="submit" class="form-auth__btn-submit">
+                  Log in
+                </button>
+                <div class="form-auth__registrate">
+                  <p class="title-question-user">Don't have an Account?</p>
+                  <button class="form-auth__button-reg">Register</button>
+                </div>
+              </div> -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="form-auth__btn-submit">Log in</button>
+            <div class="form-auth__registrate">
+              <p class="title-question-user">Don't have an Account?</p>
+              <button class="form-auth__button-reg">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

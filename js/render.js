@@ -1,5 +1,4 @@
 import { ref } from "./ref.js";
-//import { recipesData } from "./gannaData";
 
 export function renderRecipe(arr) {
   const recipeId = getParameterByName("recipe");
@@ -26,7 +25,7 @@ export function renderRecipe(arr) {
 
 export function renderDirection(arr) {
   const recipeId = getParameterByName("recipe");
-  //console.log("url", arr[recipeId - 1].process);
+
   let dirMarkup;
   if (arr.length > 0) {
     dirMarkup = arr[recipeId - 1].process
@@ -57,7 +56,7 @@ function getParameterByName(name, url) {
 }
 export function renderIngredients(arr) {
   const recipeId = getParameterByName("recipe");
-  //console.log("url", arr[recipeId - 1].process);
+
   let ingrMarkup;
   if (arr.length > 0) {
     ingrMarkup = arr[recipeId - 1].ingredients
@@ -78,4 +77,32 @@ export function renderIngredients(arr) {
     ingrMarkup = `<li class="wbsOneRecipe__dir-item"><p style="text-align:center">UPS... Nothing found!</p></li>`;
   }
   ref.tableIngrBody.insertAdjacentHTML("beforeend", ingrMarkup);
+}
+
+export function renderAllRecipes(arr) {
+  let markup;
+  if (arr.length > 0) {
+    markup = arr
+      .map(
+        (
+          item
+        ) => `<li class="wbsRecipes-item"><h2 class="wbsRecipe-title">${item.title}</h2>
+      <img
+   class="wbsRecipe-img"
+  src=${item.img}
+  alt=${item.title}
+/>
+<div class="wbsRecipe-description">
+  <p class="wbsRecipe-text">
+    ${item.description}
+  </p></div><button class="wbsRecipe-button" data-id="1" role="See more" type="button">
+    SEE MORE
+</button>
+</li>`
+      )
+      .join("");
+  } else {
+    markup = `<li class="wbsRecipe-text"><p style="text-align:center">UPS... Nothing found!</p></li>`;
+  }
+  ref.recipesList.insertAdjacentHTML("beforeend", markup);
 }

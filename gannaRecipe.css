@@ -6,24 +6,30 @@
   color: green;
   background-color: white;
   outline: transparent;
-  width: 190px;
+  width: 168px;
   height: 40px;
 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.wbsGoBack-icon {
+  fill: currentColor;
+  margin-right: 0.5rem;
+}
+
 .wbsGoBack-btn:hover,
 .wbsGoBack-btn :focus {
   background-color: green;
-  color: white;
+  /* color: white;
+  fill: white; */
 }
 
 .wbsGoBack-link {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.3rem;
   color: green;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wbsGoBack-link:hover,
 .wbsGoBack-link:focus {
@@ -49,12 +55,6 @@
   margin-bottom: 2rem;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* @media screen and (min-width: 768px) {
-    max-width: 750px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 800px;
-  } */
 }
 
 .wbsOneRecipe-text {
@@ -89,6 +89,4 @@
 .wbsOneRecipe__dir-num {
   margin-right: 2rem;
   font-weight: bold;
-}
-.wbsOneRecipe__dir-text {
 }

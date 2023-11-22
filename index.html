@@ -27,7 +27,7 @@
   <body>
     <header>
       <nav class="wbsNav">
-        <a class="header__logo" href="./index.html"
+        <a class="header__logo" href="#"
           ><img class="logo-img" src="./Images/ganna/pineappl.jpg" alt="Logo"
         /></a>
         <ul class="wbsNav__list">
@@ -125,7 +125,7 @@
         </div>
       </section>
     </main>
-    <!-- <div class="wbsLine"></div> -->
+
     <footer class="wbsFooter">
       <div class="wbsFooter__wrapper">
         <div class="wbsFooter__soc-list">
@@ -181,7 +181,6 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             <button
               type="button"
               class="btn-close"
@@ -189,32 +188,32 @@
               aria-label="Close"
             ></button>
           </div>
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
           <div class="modal-body">
             <form class="form-auth" autocomplete="on">
               <div class="form-auth__box">
-                <lable class="form-auth__lable">Email</lable>
-                <input type="email" name="email" class="form-auth__input" />
+                <lable class="form-auth__lable">Email&nbsp;&nbsp;&#8432;</lable>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-auth__input"
+                  required
+                  placeholder="Enter your email"
+                />
               </div>
 
               <div class="form-auth__box">
-                <lable class="form-auth__lable">Password</lable>
+                <lable class="form-auth__lable"
+                  >Password&nbsp;&nbsp;&#8432;</lable
+                >
                 <input
                   type="password"
                   autocomplete="current-password"
                   name="pass"
                   class="form-auth__input"
+                  required
                 />
               </div>
-
-              <!-- <div class="form-auth__box-button-form">
-                <button type="submit" class="form-auth__btn-submit">
-                  Log in
-                </button>
-                <div class="form-auth__registrate">
-                  <p class="title-question-user">Don't have an Account?</p>
-                  <button class="form-auth__button-reg">Register</button>
-                </div>
-              </div> -->
             </form>
           </div>
           <div class="modal-footer">

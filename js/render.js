@@ -95,7 +95,7 @@ export function renderAllRecipes(arr) {
 <div class="wbsRecipe-description">
   <p class="wbsRecipe-text">
     ${item.description}
-  </p></div><button class="wbsRecipe-button" data-id="1" role="See more" type="button">
+  </p></div><button class="wbsRecipe-button" data-id=${item.id} role="See more" type="button">
     SEE MORE
 </button>
 </li>`
